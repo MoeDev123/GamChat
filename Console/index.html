@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Gaming Chat Room</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBeYj6n1hsdT3SPzkSLAMXm4aEItcCU-yM",
+    authDomain: "console-chat-room-14266.firebaseapp.com",
+    databaseURL: "https://console-chat-room-14266.firebaseio.com",
+    projectId: "console-chat-room-14266",
+    storageBucket: "console-chat-room-14266.appspot.com",
+    messagingSenderId: "34900116530",
+    appId: "1:34900116530:web:1bfde24d0d2ce2237ce82b"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="main.js"defer></script>
+<link rel="stylesheet" href="style.css" >
+</head>
+<body>
+  <h1>Console Gaming Chat Room</h1>
+    <div class="allMessages">
+        
+    </div>
+    
+    <div class="userContainer">
+        <form>
+            <div class="inputContainer">
+                <div class="singleInput">
+                    <label for="username">Your name:</label>
+                    <input id="username" type="text">
+                </div>
+                <div class="singleInput">
+                    <label for="message">Message:</label>
+                    <input id="message" type="text">
+                </div>
+            </div>
+            <button id="submitButton">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
