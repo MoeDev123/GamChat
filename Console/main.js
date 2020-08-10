@@ -5,7 +5,9 @@ const button = document.getElementById("submitButton");
 button.addEventListener("click",updateDB);
 
 
-let db = firebase.database().ref(); 
+let db = firebase.database().ref();
+
+let room1 = firebase.database().ref("Console");
 
 function updateDB(event){ 
     event.preventDefault();
@@ -23,11 +25,11 @@ function updateDB(event){
         NAME: username,
         MESSAGE: message
     };
-    db.push(value);
+    room1.push(value);
 }
 
 
-db.on("child_added",addMessageToBoard);
+room1.on("child_added",addMessageToBoard);
 let messageContainer = document.querySelector(".allMessages");
 
 function addMessageToBoard(rowData){

@@ -6,6 +6,7 @@ button.addEventListener("click",updateDB);
 
 
 let db = firebase.database().ref(); 
+let room3 = firebase.database().ref("Mobile");
 
 function updateDB(event){ 
     event.preventDefault();
@@ -23,11 +24,11 @@ function updateDB(event){
         NAME: username,
         MESSAGE: message
     };
-    db.push(value);
+    room3.push(value);
 }
 
 
-db.on("child_added",addMessageToBoard);
+room3.on("child_added",addMessageToBoard);
 let messageContainer = document.querySelector(".allMessages");
 
 function addMessageToBoard(rowData){
