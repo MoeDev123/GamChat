@@ -12,7 +12,7 @@ body {
     height: 80px;
     /* position: relative; right: 90px; */
     /* overflow: hidden; */ 
-    position: relative; right: 10px; 
+    position: relative; right: 10px;
     position: sticky;
 
 }
@@ -43,13 +43,13 @@ ul {
    
     
    
-  }
+}
 
 .menuNav {
     width: 100%;
 }
 .menuNav li{
-    padding-top: 15px;
+    padding-top: 35px;
     float: left;
     border-right: 1px solid rgb(0, 0, 0);
 }
