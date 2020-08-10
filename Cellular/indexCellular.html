@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile Messaging</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDY4iLYmkX2QMSnpv-PXY2lMb0n5m9EIjY",
+    authDomain: "mobile-chat-room.firebaseapp.com",
+    databaseURL: "https://mobile-chat-room.firebaseio.com",
+    projectId: "mobile-chat-room",
+    storageBucket: "mobile-chat-room.appspot.com",
+    messagingSenderId: "641521594610",
+    appId: "1:641521594610:web:c383aeef66380c5189e06b"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="main.js" defer></script>
+<link rel="stylesheet" href="styleCellular.css">
+</head>
+<body>
+
+    <div id="NavBar">
+        <img id="navLogo" src="../Images/BrandLogo.gif" alt="BrandLogo">
+        <ul class="menuNav">
+        <li><a href="../indexHome.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+        <li><a href="Console/indexConsole.html">Console Chat</a></li>
+        <li><a href="../PC/indexPC.html">PC Chat</a></li>
+        <li><a class="active" href="../Cellular/indexCellular.html">Mobile Chat</a></li>
+    </ul>
+</div>
+
+
+    <h1>Mobile Gaming Chat Room</h1>
+    <div class="allMessages">
+        
+    </div>
+    
+    <div class="userContainer">
+        <form>
+            <div class="inputContainer">
+                <div class="singleInput">
+                    <label for="username">Your name:</label>
+                    <input id="username" type="text">
+                </div>
+                <div class="singleInput">
+                    <label for="message">Message:</label>
+                    <input id="message" type="text">
+                </div>
+            </div>
+            <button id="submitButton">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
