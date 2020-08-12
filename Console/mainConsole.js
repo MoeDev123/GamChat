@@ -3,41 +3,31 @@ const messageElement = document.getElementById("message");
 const button = document.getElementById("submitButton");
 
 button.addEventListener("click",updateDB);
-let badwords = ["hate","nigger","nigga","fuck","bitch","pussy","cunt","shit","cracker","spick","chink","asshole","dick","glizzy"];
 
 
-let db = firebase.database().ref();
-
-let room1 = firebase.database().ref("Console");
+let db = firebase.database().ref(); 
 
 function updateDB(event){ 
     event.preventDefault();
-    let username        = usernameElement.value;
-    let message         = messageElement.value;
+    const username        = usernameElement.value;
+    const message         = messageElement.value;
 
     usernameElement.value = "";
     messageElement.value  = "";
 
     console.log(username + " : " + message);
 
-    let words = message.split(" ");
-    for (let i = 0; i<words.length; i++){
-        let contain = badwords.includes(words[i].toLowerCase());
-        if (contain == true){
-          message = message.replace(words[i], "******Thats Not a Nice word******");
-        } 
-      }
-
+    
     let value = {
         
         NAME: username,
         MESSAGE: message
     };
-    room1.push(value);
+    db.push(value);
 }
 
 
-room1.on("child_added",addMessageToBoard);
+db.on("child_added",addMessageToBoard);
 let messageContainer = document.querySelector(".allMessages");
 
 function addMessageToBoard(rowData){
