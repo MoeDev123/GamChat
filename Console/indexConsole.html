@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBLCjolKcZXp58faT9QwaA3Vov-d0l4_rI",
+    authDomain: "universal-database.firebaseapp.com",
+    databaseURL: "https://universal-database.firebaseio.com",
+    projectId: "universal-database",
+    storageBucket: "universal-database.appspot.com",
+    messagingSenderId: "257748958985",
+    appId: "1:257748958985:web:e2e60244fb65d2ce311dd8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="mainConsole.js"defer></script>
+<link rel="stylesheet" href="styleConsole.css" >
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
@@ -21,45 +40,8 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-    <title>Console Gaming Chat Room</title>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBeYj6n1hsdT3SPzkSLAMXm4aEItcCU-yM",
-    authDomain: "console-chat-room-14266.firebaseapp.com",
-    databaseURL: "https://console-chat-room-14266.firebaseio.com",
-    projectId: "console-chat-room-14266",
-    storageBucket: "console-chat-room-14266.appspot.com",
-    messagingSenderId: "34900116530",
-    appId: "1:34900116530:web:1bfde24d0d2ce2237ce82b"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="mainConsole.js"defer></script>
-<link rel="stylesheet" href="styleConsole.css">
 </head>
 <body>
-
-    <div id="NavBar">
-        <img id="navLogo" src="../Images/BrandLogo.gif" alt="BrandLogo">
-        <ul class="menuNav">
-        <li><a href="../indexHome.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
-        <li><a class="active" href="indexConsole.html">Console Chat</a></li>
-        <li><a href="../PC/indexPC.html">PC Chat</a></li>
-        <li><a href="../Cellular/indexCellular.html">Mobile Chat</a></li>
-    </ul>
-</div>
-
   <h1>Console Gaming Chat Room</h1>
     <div class="allMessages">
         
