@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC Gaming Chat Room</title>
-  
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
@@ -22,8 +21,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
-<!-- The core Firebase JS SDK is always required and must be listed first -->
+    <title>PC Gaming Chat Room</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
@@ -32,22 +31,40 @@
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyBLCjolKcZXp58faT9QwaA3Vov-d0l4_rI",
-    authDomain: "universal-database.firebaseapp.com",
-    databaseURL: "https://universal-database.firebaseio.com",
-    projectId: "universal-database",
-    storageBucket: "universal-database.appspot.com",
-    messagingSenderId: "257748958985",
-    appId: "1:257748958985:web:e2e60244fb65d2ce311dd8"
+    apiKey: "AIzaSyC93pSAbpXoaippLhARrs8PonPoJPtdkSM",
+    authDomain: "pc-gaming-chat-ro.firebaseapp.com",
+    databaseURL: "https://pc-gaming-chat-ro.firebaseio.com",
+    projectId: "pc-gaming-chat-ro",
+    storageBucket: "pc-gaming-chat-ro.appspot.com",
+    messagingSenderId: "1012107981960",
+    appId: "1:1012107981960:web:ec6dd7553530eaa8df9b3d"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="mainPC.js"defer></script>
 <link rel="stylesheet" href="stylePC.css">
 
 </head>
 <body>
+
+    <div id="NavBar">
+        <img id="navLogo" src="../Images/BrandLogo.gif" alt="BrandLogo">
+        <ul class="menuNav">
+        <li><a href="../index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+        <li><a href="../Console/indexConsole.html">Console Chat</a></li>
+        <li><a class="active" href="../PC/indexPC.html">PC Chat</a></li>
+        <li><a href="../Cellular/indexCellular.html">Mobile Chat</a></li>
+        <li><a href="../MentalHealth/indexMental.html">Mental Health Links</a></li>
+
+    </ul>
+</div>
+
+
+
     <h1>PC Gaming Chat Room</h1>
     <div class="allMessages">
         
