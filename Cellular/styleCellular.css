@@ -1,0 +1,233 @@
+
+body {
+    background-color: rgb(222, 114, 236);
+    /*background-image: url(Images/Brandlogo.gif);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    */
+}
+
+#navLogo {
+    width: 80px;
+    height: 80px;
+    /* position: relative; right: 90px; */
+    /* overflow: hidden; */ 
+    position: relative; right: 10px; 
+    position: sticky;
+
+}
+
+#NavBar {
+    /* position: relative; bottom: 8px; left: 80px; */
+    display: flex;
+    width: 100vw;
+    
+}
+
+/*#backlogo {
+    opacity: 0.5;
+    
+
+}*/
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(131, 52, 124);
+    max-width: 100%; 
+    height: 80px;
+   position: relative; 
+   
+    
+   
+}
+
+.menuNav {
+    width: 100%;
+}
+.menuNav li{
+    padding-top: 35px;
+    float: left;
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+ .menuNav li a:hover:not(.active) {
+    background-color: rgb(74, 0, 97);
+}
+  
+  .active {
+    background-color: #000000;
+}
+
+
+h1 {
+    text-align: center;
+    color: rgb(255, 0, 0);
+    
+}
+
+.logoimg {
+    height: auto;
+    width: auto;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Gudea:700');
+/* GOOGLE FONTS */
+
+/* font-family: 'Fredericka the Great', cursive; */
+
+/* font-family: 'Gudea', sans-serif; */
+
+/* COLOR PALETTE */
+
+/* https://coolors.co/36151e-839791-593f62-e3b23c-edebd7 */
+
+:root {
+    --primaryDark: #36151E;
+    --primaryLight: #EDEBD7;
+    --accent: #E3B23C;
+    --alternate: #593F62;
+    --addedPadding: 10px;
+}
+
+html,
+body,
+h1,
+p {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: purple;
+}
+
+h1,
+label,
+#submitButton {
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: bold;
+}
+
+input,
+.allMessages>p {
+    font-family: 'Gudea', sans-serif;
+}
+
+h1 {
+    font-size: 45px;
+    color: var(--accent);
+    text-align: center;
+}
+
+.allMessages {
+    flex: 1;
+    margin-top: 15px;
+    width: calc(60% + var(--addedPadding)*2);
+    padding: var(--addedPadding);
+    border: 2px solid var(--accent);
+    background-color: var(--primaryLight);
+    color: var(--alternate);
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    display: grid;
+    grid-auto-rows: min-content;
+    grid-gap: 5px;
+}
+
+.allMessages>p {
+    text-indent: -2em;
+    margin-left: 2em;
+}
+
+.userContainer {
+    margin: 20px 0 40px 0;
+    width: 60%;
+    border: 2px solid var(--accent);
+    background-color: var(--primaryLight);
+}
+
+label {
+    font-size: 1.3em;
+    color: var(--primaryDark);
+}
+
+input {
+    font-size: 1.3em;
+    background: none;
+    border: unset;
+    border-bottom: var(--alternate) 2px solid;
+    caret-color: var(--accent);
+    color: var(--alternate);
+}
+
+input:focus {
+    outline: none;
+}
+
+.userContainer {
+    padding: var(--addedPadding);
+}
+
+form,
+.inputContainer,
+.singleInput {
+    display: grid;
+    grid-gap: var(--addedPadding);
+}
+
+form {
+    grid-template: auto/1fr auto;
+}
+
+.inputContainer {
+    grid-template: auto auto/auto;
+}
+
+.singleInput {
+    grid-template: auto/auto 1fr;
+}
+
+#submitButton {
+    color: var(--primaryDark);
+    background-color: var(--accent);
+    font-size: 1.3em;
+    transition: color 300ms ease-in, background-color 300ms ease-in;
+    cursor: pointer;
+}
+
+#submitButton:hover {
+    background-color: var(--primaryDark);
+    color: var(--accent);
+}
+
+#submitButton:focus {
+    outline-style: none;
+    outline-width: 2px;
+    outline-color: var(--primarydark);
+}

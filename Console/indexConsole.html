@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBLCjolKcZXp58faT9QwaA3Vov-d0l4_rI",
+    authDomain: "universal-database.firebaseapp.com",
+    databaseURL: "https://universal-database.firebaseio.com",
+    projectId: "universal-database",
+    storageBucket: "universal-database.appspot.com",
+    messagingSenderId: "257748958985",
+    appId: "1:257748958985:web:e2e60244fb65d2ce311dd8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="mainConsole.js"defer></script>
+<link rel="stylesheet" href="styleConsole.css" >
+<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+  <div id="NavBar">
+    <img id="navLogo" src="../Images/BrandLogo.gif" alt="BrandLogo">
+    <ul class="menuNav">
+    <li><a href="../index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+    <li><a class="active" href="indexConsole.html">Console Chat</a></li>
+    <li><a href="../PC/indexPC.html">PC Chat</a></li>
+    <li><a href="../Cellular/indexCellular.html">Mobile Chat</a></li>
+    <li><a href="../MentalHealth/indexMental.html">Mental Health Links</a></li>
+</ul>
+</div>
+  <h1>Console Gaming Chat Room</h1>
+    <div class="allMessages">
+        
+    </div>
+    
+    <div class="userContainer">
+        <form>
+            <div class="inputContainer">
+                <div class="singleInput">
+                    <label for="username">Your name:</label>
+                    <input id="username" type="text">
+                </div>
+                <div class="singleInput">
+                    <label for="message">Message:</label>
+                    <input id="message" type="text">
+                </div>
+            </div>
+            <button id="submitButton">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
