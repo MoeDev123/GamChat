@@ -21,7 +21,7 @@ body {
     /* position: relative; bottom: 8px; left: 80px; */
     display: flex;
     width: 100vw;
-    
+    position: relative; bottom: 8px; right: 9px;
 }
 
 /*#backlogo {
