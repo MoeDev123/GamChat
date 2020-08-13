@@ -139,7 +139,7 @@ input,
 
 h1 {
     font-size: 45px;
-    color: var(--accent);
+    color: red;
     text-align: center;
 }
 
@@ -148,9 +148,9 @@ h1 {
     margin-top: 15px;
     width: calc(60% + var(--addedPadding)*2);
     padding: var(--addedPadding);
-    border: 2px solid var(--accent);
-    background-color: var(--primaryLight);
-    color: var(--alternate);
+    border: 2px solid black;
+    background-color: rgb(240, 138, 240);
+    /* color: var(--alternate); */
     overflow-y: scroll;
     overflow-wrap: break-word;
     box-sizing: border-box;
@@ -162,18 +162,20 @@ h1 {
 .allMessages>p {
     text-indent: -2em;
     margin-left: 2em;
+    font-weight: bold;
 }
 
 .userContainer {
     margin: 20px 0 40px 0;
     width: 60%;
-    border: 2px solid var(--accent);
+    border: 2px solid black/*var(--accent)*/;
     background-color: var(--primaryLight);
+    
 }
 
 label {
     font-size: 1.3em;
-    color: var(--primaryDark);
+    color:purple;
 }
 
 input {
@@ -181,8 +183,8 @@ input {
     background: none;
     border: unset;
     border-bottom: var(--alternate) 2px solid;
-    caret-color: var(--accent);
-    color: var(--alternate);
+    /* caret-color: var(--accent); */
+    /* color: var(--alternate); */
 }
 
 input:focus {
@@ -213,16 +215,16 @@ form {
 }
 
 #submitButton {
-    color: var(--primaryDark);
-    background-color: var(--accent);
+    color: black;
+    background-color: plum;
     font-size: 1.3em;
     transition: color 300ms ease-in, background-color 300ms ease-in;
     cursor: pointer;
 }
 
 #submitButton:hover {
-    background-color: var(--primaryDark);
-    color: var(--accent);
+    background-color: purple;
+    /* color: var(--accent); */
 }
 
 #submitButton:focus {
@@ -230,3 +232,10 @@ form {
     outline-width: 2px;
     outline-color: var(--primarydark);
 }
+
+
+#mainfooter {
+    text-align: center;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+  }
